@@ -1,19 +1,16 @@
-// Copyright 2018 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
 
-'use strict';
+let menuItem = {"id": "Youtube","title": "Search on YouTube","contexts": ["selection"]}
 
-chrome.runtime.onInstalled.addListener(function() {
-  chrome.storage.sync.set({color: '#3aa757'}, function() {
-    console.log('The color is green.');
-  });
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: 'developer.chrome.com'},
-      })],
-      actions: [new chrome.declarativeContent.ShowPageAction()]
-    }]);
-  });
-});
+chrome.contextMenus.create(menuItem)
+
+chrome.contextMenus.onClicked.addListener(
+    function(clickData){
+        let YtUrl = "https://www.youtube.com/results?search_query=" + clickData.selectionText
+        let createData = {"url": YtUrl,"type": "normal","top": 5,"left": 5,"width": 1000,"height": 1000}              
+        chrome.windows.create(createData)      
+    }
+)
+
+
+
+

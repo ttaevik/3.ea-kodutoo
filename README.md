@@ -1,20 +1,14 @@
 # 3. kodutöö – Chrome extension
 
-Kodutööna peab looma Chrome extension'i selliselt, et nõuded oleksid täidetud. Soovi korral võib ka teha Firefox'ile.
+Töö autorid:
 
-**Töö on soovitatav teha kahekesi!**
+Tauri Taevik
+Robert Shevchenko
+Kert Tamm
 
-## Nõuded
+Antud Chrome extension võimaldab kiirelt salvestada kõik avatud tabid ning võimaldab salvestatud tabid kiirelt avada uues aknas.
+Lisaks võimaldab highlighted teksti kiirelt youtubeist otsida.
 
-1. Kirjelda README.md failis, mida rakendus teeb. 
-1. Rakendus peab tegema külastatava veebilehe/veebirakenduse kas ilusamaks, mugavamaks või huvitamaks.
-1. Peab oleama piisavalt keerukas (midagi enemat kui tunnis tegmine)
-1. Ole loominguline, näiteks põnevad asjad millele saab brauser ligi, kuid nendega on keeruline toimetada.
-    - bluetooth, sh pulsivöö [dokumentatsioon](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
-    - mikrofon [näide](https://www.talater.com/annyang/)
-    - webcam [näide](https://revealjs.herokuapp.com/#/0/1)
+![alt text](search.png "Youtube search")
 
-## Täiendav abimaterjal
-
-* Chrome extension API [JavaScript APIs](https://developer.chrome.com/extensions/api_index/)
-* Chrome extension'ite näited [Sample Extensions](https://developer.chrome.com/extensions/samples/)
+![alt text](popup.png "popup")

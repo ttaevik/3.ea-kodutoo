@@ -1,0 +1,50 @@
+.grid {
+    display: grid;
+    width:110px;
+    grid-gap: 10px;
+    grid: "one one" 
+          "two two" 
+          / 1fr 1fr;
+  }
+.color-change {
+    color: #171b83;
+    font-size: 20px;
+    font-family: helvetica;
+    
+    text-decoration: none;
+    
+    /* border */
+    border: 2px solid #171b83;
+    border-radius: 20px;
+    
+    /* transitions */
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    
+    /* other */
+    background-color: white;
+    padding: 4px 30px;
+    /* button desing link https://www.sitepoint.com/modern-css-buttons/*/
+  }
+  
+  .color-change:hover {
+    /* update text color and background color */
+    color:#171b83;
+    background-color:#78bf62;
+  
+    /* transitions */
+    transition-duration: .2s;
+    -webkit-transition-duration: .11s;
+    -moz-transition-duration: .2s;
+  }
+  .item1 {
+    grid-area: one;
+  }
+  
+  .item2 {
+    grid-area: two;
+  }
+  
+  
+ 
